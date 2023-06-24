@@ -10,6 +10,9 @@ public abstract class DialogueNode : ScriptableObject
 
     public NarrationLine NarrationLine => narrationLine;
 
+    public bool isFinal = false;
+    public string ending = "";
+
     public abstract bool CanBeFollowedByNode(DialogueNode node);
 
     public abstract void Accept(DialogueNodeVisitor visitor);

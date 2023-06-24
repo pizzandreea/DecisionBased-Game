@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class InventorySystem : MonoBehaviour
+public class InventorySystem : MonoBehaviour, IDataPersistence
 {
     public static InventorySystem InventoryInstance { get; private set; }
     private Dictionary<InventoryItemData, InventoryItem> m_itemDictionary;
@@ -75,5 +75,16 @@ public class InventorySystem : MonoBehaviour
                 m_itemDictionary.Remove(referenceData);
             }
         }
+    }
+
+    public void LoadData(GameData gameData)
+    {
+       // apelam add pt toate  inventoryItemData dupa id 
+       // din inventory luam fiecare obiect (inventoyItemData)
+    }
+
+    public void SaveData( GameData gameData)
+    {
+
     }
 }

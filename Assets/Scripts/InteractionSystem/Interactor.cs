@@ -34,14 +34,49 @@ public class Interactor : MonoBehaviour, IDataPersistence
     private IInteractable _currentInteractableObject;
     private IInteractable lastInteractable = null;
 
-    public void LoadData(GameData gameData)
+    public bool foundMom = false;
+    public bool hasIngredients = false;
+    
+    public int relationshipBob = 0;
+    public int relationshipJohn = 0;
+    
+
+    public void growRelationship(string characterName)
     {
-        this.transform.position = gameData.playerPosition;
+        if(characterName == "John")
+        {
+            relationshipJohn++;
+        }
+        else if(characterName == "Bob")
+        {
+            relationshipBob++;
+        }
     }
 
-    public void SaveData(ref GameData gameData)
+    public void lowerRelationship(string characterName)
     {
-        gameData.playerPosition = transform.position;
+        if (characterName == "John")
+        {
+            relationshipJohn--;
+        }
+        else if (characterName == "Bob")
+        {
+            relationshipBob--;
+        }
+    }
+
+
+    public void LoadData(GameData gameData)
+    {
+        
+        //this.transform.position = gameData.playerPosition;
+    }
+
+    public void SaveData( GameData gameData)
+    {
+        
+        gameData.playerPosition = this.transform.position;
+        gameData.currentDateTime = System.DateTime.Now.ToString();
     }
 
     private void Start()

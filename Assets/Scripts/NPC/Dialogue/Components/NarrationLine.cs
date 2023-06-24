@@ -14,5 +14,9 @@ public class NarrationLine : ScriptableObject
 
     public string Text => text;
 
+    //get characterName from NarrationCharacter
+    public string CharacterName => character.CharacterName;
+
+
 
 }

@@ -10,6 +10,10 @@ public class BasicDialogueNode : DialogueNode
     private DialogueNode m_NextNode;
     public DialogueNode NextNode => m_NextNode;
 
+    [SerializeField]
+    
+
+
 
     public override bool CanBeFollowedByNode(DialogueNode node)
     {

@@ -9,7 +9,9 @@ public class InGameMenu : MonoBehaviour
     
     public void ExitGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        DataPersistenceManager.instance.SaveGame();
+        SceneManager.LoadSceneAsync("Main Menu");
+        
     }
 
     public void SaveGame()

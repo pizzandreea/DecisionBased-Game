@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 4276324180339636}
   - component: {fileID: 33491677292423316}
   - component: {fileID: 23905449073395398}
-  m_Layer: 0
+  - component: {fileID: 1026552375}
+  - component: {fileID: 1026552376}
+  m_Layer: 6
   m_Name: rpgpp_lt_flower_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046453777464574}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2549492, y: 1.2549495, z: 1.2549495}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,3 +85,34 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1026552375
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046453777464574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2106802, y: 1.0435933, z: 1.1155158}
+  m_Center: {x: 0.07272452, y: 0.5217026, z: 0.0066241333}
+--- !u!114 &1026552376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046453777464574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c13044452149f4c9feb7eb37f3bc6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 842fb794-7d2e-4981-bfcb-17f302bddb7a
+  collected: 0
+  meshRenderer: {fileID: 0}
+  _prompt: Collect Red Flower
+  referenceItem: {fileID: 11400000, guid: 3cc1d76f04da95648a481b4b1eb1b17e, type: 2}
+  canPickUp: 1

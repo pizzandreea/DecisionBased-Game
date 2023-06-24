@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a1e2e18becdbf49ab12c675986877f, type: 3}
+  m_Name: 2DialogueNode 2.1
+  m_EditorClassIdentifier: 
+  narrationLine: {fileID: 11400000, guid: dfe5d885b6dfdb9418a9732a5e6cfe2f, type: 2}
+  isFinal: 0
+  ending: 
+  m_Choices:
+  - m_ChoicePreview: Pentru a gati cina.
+    m_ChoiceNode: {fileID: 11400000, guid: 3b3a21f56eb16bb4fbdc562a441c1e88, type: 2}
+  - m_ChoicePreview: Ne-au fost furati sacii.
+    m_ChoiceNode: {fileID: 11400000, guid: f9ff8b7c6219b334b9c6106f0023763b, type: 2}

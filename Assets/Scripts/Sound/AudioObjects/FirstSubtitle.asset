@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: FirstSubtitle
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 5b2f7e402b262c04b839f667577f3ae3, type: 3}
-  subtitle: Welcome to the village, you have to go find your mom to get dinner ready
+  subtitle: Acesta este satul tau, exploreaza si gaseaste-o pe mama ta pentru a gati
+    cina!

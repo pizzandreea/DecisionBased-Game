@@ -10,6 +10,7 @@ public class DialogueException : System.Exception
 
 public class DialogueSequencer : MonoBehaviour
 {
+    public Interactor interactor;
     public delegate void DialogueCallBack(Dialogue dialogue);
     public delegate void DialogueNodeCallBack(DialogueNode node);
 
@@ -21,6 +22,11 @@ public class DialogueSequencer : MonoBehaviour
     private Dialogue currentDialogue;
     private DialogueNode currentNode;   
 
+    public void Start()
+    {
+        //find the object with the name Player
+        interactor = GameObject.Find("Player").GetComponent<Interactor>();
+    }
 
     public void StartDialogue(Dialogue dialogue)
     {
@@ -62,11 +68,19 @@ public class DialogueSequencer : MonoBehaviour
         if (CanStartNode(node))
         {
             StopDialogueNode(currentNode);
-
+            
             currentNode = node; 
-
+            
             if (currentNode != null)
             {
+                
+                if(currentNode.ending != "")
+                {
+                    Debug.Log(currentNode.ending + currentNode.NarrationLine.CharacterName);
+                    // i want to send a message to the interactor object to activate a function of the name of the message
+                    //interactor.SendMessage(currentNode.ending, currentNode.NarrationLine.CharacterName);
+                }
+                
                 OnDialogueNodeStart?.Invoke(currentNode);
             }
             else
