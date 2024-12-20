@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c3b84103ceebd49409ef554615681aa2
+=======
+guid: f34741317f3a6ae44b48b3fd2cf18a14
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

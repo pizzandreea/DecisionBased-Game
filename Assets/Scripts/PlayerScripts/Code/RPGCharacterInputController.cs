@@ -131,6 +131,7 @@ namespace RPGCharacterAnims
 			var jumpInput = isJumpHeld ? Vector3.up : Vector3.zero;
 			rpgCharacterController.SetJumpInput(jumpInput);
 
+<<<<<<< HEAD
 			if (!TimeManager.isPaused)
 			{
 				// If we pressed jump button this frame, jump.
@@ -143,6 +144,16 @@ namespace RPGCharacterAnims
 				{ rpgCharacterController.StartAction(HandlerTypes.DoubleJump); }
             }
         }
+=======
+			// If we pressed jump button this frame, jump.
+			if (inputJump && rpgCharacterController.CanStartAction(HandlerTypes.Jump))
+			{ rpgCharacterController.StartAction(HandlerTypes.Jump); }
+
+			// Or doublejump if already jumped.
+			else if (inputJump && rpgCharacterController.CanStartAction(HandlerTypes.DoubleJump))
+			{ rpgCharacterController.StartAction(HandlerTypes.DoubleJump); }
+		}
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 
 		public void Rolling()
         {

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f35ed207e85e1b04882129e9fe06cf8b
+=======
+guid: 0bb174f69c9851a48b09bf7d8180c39e
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 timeCreated: 1559922614
 licenseType: Store
 TextureImporter:

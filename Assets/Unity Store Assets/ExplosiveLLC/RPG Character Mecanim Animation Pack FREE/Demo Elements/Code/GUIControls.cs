@@ -19,6 +19,7 @@ namespace RPGCharacterAnims
         private Vector3 jumpInput;
         public GameObject nav;
 
+<<<<<<< HEAD
 		[SerializeField] GameObject weaponHolder;
 		[SerializeField] GameObject sword;
 		[SerializeField] GameObject weaponSheath;
@@ -26,17 +27,25 @@ namespace RPGCharacterAnims
 		GameObject currentWeaponInHand;
 		GameObject currentWeaponInSheath;
 
+=======
+>>>>>>> eaa0af3 (Choose-your-Adventure)
         private void Start()
         {
             // Get other RPG Character components.
             rpgCharacterController = GetComponent<RPGCharacterController>();
             rpgCharacterWeaponController = GetComponent<RPGCharacterWeaponController>();
+<<<<<<< HEAD
 			currentWeaponInSheath = Instantiate(sword, weaponSheath.transform);
+=======
+>>>>>>> eaa0af3 (Choose-your-Adventure)
         }
 
         private void OnGUI()
         {
+<<<<<<< HEAD
 
+=======
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 			// Allow Navigation if grounded.
 			if (rpgCharacterController.maintainingGround) { Navigation(); }
 
@@ -60,9 +69,15 @@ namespace RPGCharacterAnims
 
 		private void Idle()
 		{
+<<<<<<< HEAD
 			//GUI.Button(new Rect(540, 140, 60, 30), "Idle");
 			//idleStatic = GUI.HorizontalSlider(new Rect(540, 170, 60, 30), idleStatic, 0.0F, 1f);
 			//rpgCharacterController.animator.SetFloat(AnimationParameters.Idle, idleStatic);
+=======
+			GUI.Button(new Rect(540, 140, 60, 30), "Idle");
+			idleStatic = GUI.HorizontalSlider(new Rect(540, 170, 60, 30), idleStatic, 0.0F, 1f);
+			rpgCharacterController.animator.SetFloat(AnimationParameters.Idle, idleStatic);
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 		}
 
 		private void Navigation()
@@ -70,7 +85,11 @@ namespace RPGCharacterAnims
 			// Check to make sure Navigation Action exists.
             if (!rpgCharacterController.HandlerExists(HandlerTypes.Navigation)) { return; }
 
+<<<<<<< HEAD
             /*useNavigation = GUI.Toggle(new Rect(550, 105, 100, 30), useNavigation, "Navigation");
+=======
+            useNavigation = GUI.Toggle(new Rect(550, 105, 100, 30), useNavigation, "Navigation");
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 
             var navChild = nav.transform.GetChild(0);
             if (useNavigation) {
@@ -100,7 +119,11 @@ namespace RPGCharacterAnims
 				// End Navigation Action if possible.
 				if (rpgCharacterController.CanEndAction(HandlerTypes.Navigation))
 				{ rpgCharacterController.EndAction(HandlerTypes.Navigation); }
+<<<<<<< HEAD
             }*/
+=======
+            }
+>>>>>>> eaa0af3 (Choose-your-Adventure)
         }
 
 		private void Attacks()
@@ -117,7 +140,11 @@ namespace RPGCharacterAnims
 			if (!rpgCharacterController.CanStartAction(HandlerTypes.Attack)) { return; }
 
 			// Attack Left.
+<<<<<<< HEAD
 			/*if (rpgCharacterController.leftWeapon == Weapon.Unarmed && rpgCharacterController.rightWeapon == Weapon.Unarmed) {
+=======
+			if (rpgCharacterController.leftWeapon == Weapon.Unarmed && rpgCharacterController.rightWeapon == Weapon.Unarmed) {
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 				if (GUI.Button(new Rect(25, 85, 100, 30), "Attack L"))
 				{ rpgCharacterController.StartAction(HandlerTypes.Attack, new AttackContext("Attack", Side.Left)); }
 			}
@@ -125,11 +152,18 @@ namespace RPGCharacterAnims
 			if (rpgCharacterController.rightWeapon == Weapon.Unarmed && rpgCharacterController.leftWeapon == Weapon.Unarmed) {
 				if (GUI.Button(new Rect(130, 85, 100, 30), "Attack R"))
 				{ rpgCharacterController.StartAction(HandlerTypes.Attack, new AttackContext("Attack", Side.Right)); }
+<<<<<<< HEAD
 			}*/
 			// TwoHanded Attack.
 			if (rpgCharacterController.hasTwoHandedWeapon) {
 				// if (GUI.Button(new Rect(130, 85, 100, 30), "Attack"))
 				if(Input.GetMouseButtonDown(0))
+=======
+			}
+			// TwoHanded Attack.
+			if (rpgCharacterController.hasTwoHandedWeapon) {
+				if (GUI.Button(new Rect(130, 85, 100, 30), "Attack"))
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 				{ rpgCharacterController.StartAction(HandlerTypes.Attack, new AttackContext("Attack", Side.None)); }
 			}
 		}
@@ -137,7 +171,11 @@ namespace RPGCharacterAnims
 		private void Damage()
         {
 			// Check if Get Hit Action exists and can start it.
+<<<<<<< HEAD
 			/*if (rpgCharacterController.HandlerExists(HandlerTypes.GetHit)
+=======
+			if (rpgCharacterController.HandlerExists(HandlerTypes.GetHit)
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 				&& rpgCharacterController.CanStartAction(HandlerTypes.GetHit)) {
 					if (GUI.Button(new Rect(30, 240, 100, 30), "Get Hit"))
 					{ rpgCharacterController.StartAction(HandlerTypes.GetHit, new HitContext()); }
@@ -155,7 +193,11 @@ namespace RPGCharacterAnims
 				&& rpgCharacterController.CanStartAction(HandlerTypes.Knockdown)) {
 					if (GUI.Button(new Rect(130, 270, 100, 30), "Knockdown"))
 					{ rpgCharacterController.StartAction(HandlerTypes.Knockdown, new HitContext((int)KnockdownType.Knockdown1, Vector3.back)); }
+<<<<<<< HEAD
 			}*/
+=======
+			}
+>>>>>>> eaa0af3 (Choose-your-Adventure)
         }
 
 		private void DiveRoll()
@@ -163,8 +205,12 @@ namespace RPGCharacterAnims
 			// Check if DiveRoll Action exists and can start it.
 			if (rpgCharacterController.HandlerExists(HandlerTypes.DiveRoll)) {
 				if (rpgCharacterController.CanStartAction(HandlerTypes.DiveRoll)) {
+<<<<<<< HEAD
 					//if (GUI.Button(new Rect(445, 75, 100, 30), "Dive Roll"))
 					if(Input.GetKeyDown(KeyCode.X))
+=======
+					if (GUI.Button(new Rect(445, 75, 100, 30), "Dive Roll"))
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 					{ rpgCharacterController.StartAction(HandlerTypes.DiveRoll, DiveRollType.DiveRoll1); }
 				}
 			}
@@ -175,6 +221,7 @@ namespace RPGCharacterAnims
 			// Check if Jump Action exists.
 			if (!rpgCharacterController.HandlerExists(HandlerTypes.Jump)) { return; }
 
+<<<<<<< HEAD
 			if (!TimeManager.isPaused)
 			{
 				// Check if can start Jump Action.
@@ -199,17 +246,41 @@ namespace RPGCharacterAnims
 					}
 				}
 			}
+=======
+			// Check if can start Jump Action.
+			if (rpgCharacterController.CanStartAction(HandlerTypes.Jump)) {
+                if (GUI.Button(new Rect(25, 175, 100, 30), "Jump")) {
+                    rpgCharacterController.SetJumpInput(Vector3.up);
+                    rpgCharacterController.StartAction(HandlerTypes.Jump);
+                }
+            }
+			// Check if can start DoubleJump Action.
+			if (rpgCharacterController.CanStartAction(HandlerTypes.DoubleJump)) {
+                if (GUI.Button(new Rect(25, 175, 100, 30), "Jump Flip")) {
+                    rpgCharacterController.SetJumpInput(Vector3.up);
+                    rpgCharacterController.StartAction(HandlerTypes.DoubleJump);
+                }
+            }
+>>>>>>> eaa0af3 (Choose-your-Adventure)
         }
 
 		private void DebugRPGCharacter()
 		{
 			// Output all controller variables.
+<<<<<<< HEAD
 			/*if (GUI.Button(new Rect(600, 20, 120, 30), "Debug Controller"))
+=======
+			if (GUI.Button(new Rect(600, 20, 120, 30), "Debug Controller"))
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 			{ rpgCharacterController.DebugController(); }
 
 			// Output all Animator parameters.
 			if (GUI.Button(new Rect(600, 50, 120, 30), "Debug Animator"))
+<<<<<<< HEAD
 			{ rpgCharacterController.animator.DebugAnimatorParameters(); }*/
+=======
+			{ rpgCharacterController.animator.DebugAnimatorParameters(); }
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 		}
 
         private void WeaponSwitching()
@@ -221,6 +292,7 @@ namespace RPGCharacterAnims
 
 			// Create a new SwitchWeaponContext with the switch settings.
 			var switchWeaponContext = new SwitchWeaponContext();
+<<<<<<< HEAD
             var offset = 310;
             // Unarmed.
             if (rpgCharacterController.rightWeapon != Weapon.Unarmed
@@ -241,12 +313,28 @@ namespace RPGCharacterAnims
 				}
 			}
 			//else
+=======
+
+			// Unarmed.
+			if (rpgCharacterController.rightWeapon != Weapon.Unarmed
+				|| rpgCharacterController.leftWeapon != Weapon.Unarmed) {
+				if (GUI.Button(new Rect(1115, 280, 100, 30), "Unarmed")) {
+					doSwitch = true;
+					switchWeaponContext.type = "Switch";
+					switchWeaponContext.side = "Both";
+					switchWeaponContext.leftWeapon = Weapon.Unarmed;
+					switchWeaponContext.rightWeapon = Weapon.Unarmed;
+				}
+			}
+			var offset = 310;
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 
 			// TwoHanded weapon.
 			foreach (var weapon in WeaponGroupings.TwoHandedWeapons) {
 				if (rpgCharacterController.rightWeapon != weapon) {
 					var label = weapon.ToString();
 					if (label.StartsWith("TwoHand")) { label = label.Replace("TwoHand", "2H "); }
+<<<<<<< HEAD
 					//if (GUI.Button(new Rect(1115, offset, 100, 30), label)) {
 					if(!TimeManager.isPaused) { 
 						if (Input.GetKeyDown(KeyCode.R)) {
@@ -271,10 +359,26 @@ namespace RPGCharacterAnims
 			// Instant weapon toggle.
 			//useInstant = GUI.Toggle(new Rect(1000, 310, 100, 30), useInstant, "Instant");
 			//if (useInstant) { switchWeaponContext.type = "Instant"; }
+=======
+					if (GUI.Button(new Rect(1115, offset, 100, 30), label)) {
+						doSwitch = true;
+						switchWeaponContext.type = "Switch";
+						switchWeaponContext.side = "None";
+						switchWeaponContext.leftWeapon = Weapon.Unarmed;
+						switchWeaponContext.rightWeapon = weapon;
+					}
+				}
+				offset += 30;
+			}
+			// Instant weapon toggle.
+			useInstant = GUI.Toggle(new Rect(1000, 310, 100, 30), useInstant, "Instant");
+			if (useInstant) { switchWeaponContext.type = "Instant"; }
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 
 			// Perform the weapon switch using the SwitchWeaponContext created earlier.
 			if (doSwitch) { rpgCharacterController.TryStartAction(HandlerTypes.SwitchWeapon, switchWeaponContext); }
 		}
+<<<<<<< HEAD
 
 		public void StartDealDamage()
 		{
@@ -285,5 +389,7 @@ namespace RPGCharacterAnims
 		{
 			sword.GetComponentInChildren<DamageDealer>().EndDealDamage();
 		}
+=======
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 	}
 }

@@ -7,7 +7,10 @@ TagManager:
   - Shadow
   - Collide
   - Interactable
+<<<<<<< HEAD
   - Chicken
+=======
+>>>>>>> eaa0af3 (Choose-your-Adventure)
   layers:
   - Default
   - TransparentFX
@@ -16,10 +19,15 @@ TagManager:
   - Water
   - UI
   - Interactable
+<<<<<<< HEAD
   - TempCast
   - Player
   - Enemy
   - Ragdoll
+=======
+  - 
+  - TempCast
+>>>>>>> eaa0af3 (Choose-your-Adventure)
   - Walkable
   - 
   - 
@@ -41,6 +49,11 @@ TagManager:
   - 
   - 
   - 
+<<<<<<< HEAD
+=======
+  - 
+  - 
+>>>>>>> eaa0af3 (Choose-your-Adventure)
   m_SortingLayers:
   - name: Default
     uniqueID: 0

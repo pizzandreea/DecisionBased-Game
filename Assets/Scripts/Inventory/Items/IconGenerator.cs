@@ -41,18 +41,26 @@ public class IconGenerator : MonoBehaviour
 
             obj.gameObject.SetActive (false);
 
+<<<<<<< HEAD
 # if UNITY_EDITOR
+=======
+>>>>>>> eaa0af3 (Choose-your-Adventure)
             Sprite s = AssetDatabase.LoadAssetAtPath<Sprite>($"Assets/{pathFolder}/{data.id}_Icon.png");
 
             if(s != null )
             {
                 data.icon = s;
+<<<<<<< HEAD
 
 
                 EditorUtility.SetDirty(data);
 
             }
 #endif
+=======
+                EditorUtility.SetDirty(data);
+            }
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 
             yield return null;
         }

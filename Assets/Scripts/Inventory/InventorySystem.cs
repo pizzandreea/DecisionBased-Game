@@ -4,7 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
+<<<<<<< HEAD
 public class InventorySystem : MonoBehaviour, IDataPersistence
+=======
+public class InventorySystem : MonoBehaviour
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 {
     public static InventorySystem InventoryInstance { get; private set; }
     private Dictionary<InventoryItemData, InventoryItem> m_itemDictionary;
@@ -76,6 +80,7 @@ public class InventorySystem : MonoBehaviour, IDataPersistence
             }
         }
     }
+<<<<<<< HEAD
 
     public void LoadData(GameData gameData)
     {
@@ -87,4 +92,6 @@ public class InventorySystem : MonoBehaviour, IDataPersistence
     {
 
     }
+=======
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 }

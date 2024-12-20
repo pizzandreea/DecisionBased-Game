@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 3ebfadd85630b5a419cf6b6d76e6f3be
+=======
+guid: 807cf4ac218a00345b44c9bd6cc3bf99
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 folderAsset: yes
 timeCreated: 1559921218
 licenseType: Store

@@ -54,8 +54,13 @@ namespace RPGCharacterAnims
 				cameraTarget.transform.position.y + height,
 				cameraTarget.transform.position.z - distance);
 
+<<<<<<< HEAD
 			distance = -1;
 			height = -0.5f;
+=======
+			distance = 1;
+			height = 1;
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 		}
 
 		/// <summary>
@@ -64,7 +69,11 @@ namespace RPGCharacterAnims
 		private void Inputs()
 		{
 			#if ENABLE_INPUT_SYSTEM
+<<<<<<< HEAD
 			//inputFollow = Keyboard.current.fKey.isPressed;
+=======
+			inputFollow = Keyboard.current.fKey.isPressed;
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 			inputRotateL = Keyboard.current.qKey.isPressed;
 			inputRotateR = Keyboard.current.eKey.isPressed;
 			inputMouseScrollUp = Mouse.current.scroll.ReadValue().y > 0f;
@@ -85,6 +94,7 @@ namespace RPGCharacterAnims
 			Inputs();
 
 			// Follow cam.
+<<<<<<< HEAD
 			/*if (inputFollow) {
 				if (following) { following = false; }
 				else { following = true; }
@@ -116,6 +126,34 @@ namespace RPGCharacterAnims
             }
 
             private void CameraFollow()
+=======
+			if (inputFollow) {
+				if (following) { following = false; }
+				else { following = true; }
+			}
+			if (following) { CameraFollow(); }
+			else { transform.position = lastPosition; }
+
+			// Rotate cam.
+			if (inputRotateL) { rotate = -1; }
+			else if (inputRotateR) { rotate = 1; }
+			else { rotate = 0; }
+
+			// Mouse zoom.
+			if (inputMouseScrollUp) { distance += zoomAmount; height += zoomAmount; }
+			else if (inputMouseScrollDown) { distance -= zoomAmount; height -= zoomAmount; }
+
+			// Set cameraTargetOffset as cameraTarget + cameraTargetOffsetY.
+			cameraTargetOffset = cameraTarget.transform.position + new Vector3(0, cameraTargetOffsetY, 0);
+
+			// Smoothly look at cameraTargetOffset.
+			transform.rotation = Quaternion.Slerp(transform.rotation,
+				Quaternion.LookRotation(cameraTargetOffset - transform.position),
+				Time.deltaTime * smoothing);
+		}
+
+		private void CameraFollow()
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 		{
 			offset = Quaternion.AngleAxis(rotate * rotateSpeed, Vector3.up) * offset;
 

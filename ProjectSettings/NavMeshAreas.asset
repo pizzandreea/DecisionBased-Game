@@ -69,13 +69,21 @@ NavMeshProjectSettings:
     cost: 1
   - name: 
     cost: 1
+<<<<<<< HEAD
   m_LastAgentTypeID: 1479372276
+=======
+  m_LastAgentTypeID: -887442657
+>>>>>>> eaa0af3 (Choose-your-Adventure)
   m_Settings:
   - serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
+<<<<<<< HEAD
     agentSlope: 43.2
+=======
+    agentSlope: 45
+>>>>>>> eaa0af3 (Choose-your-Adventure)
     agentClimb: 0.75
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -85,6 +93,7 @@ NavMeshProjectSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+<<<<<<< HEAD
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -141,10 +150,15 @@ NavMeshProjectSettings:
     accuratePlacement: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
+=======
+>>>>>>> eaa0af3 (Choose-your-Adventure)
     debug:
       m_Flags: 0
   m_SettingNames:
   - Humanoid
+<<<<<<< HEAD
   - Bear
   - New Agent 1
   - Chicken
+=======
+>>>>>>> eaa0af3 (Choose-your-Adventure)

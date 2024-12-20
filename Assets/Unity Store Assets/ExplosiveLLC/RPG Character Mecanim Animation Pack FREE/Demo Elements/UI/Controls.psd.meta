@@ -3,7 +3,11 @@ guid: 19663e3fea6f609468d37dbdcd231930
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
+<<<<<<< HEAD
   serializedVersion: 12
+=======
+  serializedVersion: 11
+>>>>>>> eaa0af3 (Choose-your-Adventure)
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -23,8 +27,11 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+<<<<<<< HEAD
   vTOnly: 0
   ignoreMasterTextureLimit: 0
+=======
+>>>>>>> eaa0af3 (Choose-your-Adventure)
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -33,9 +40,15 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 1
     aniso: 1
     mipBias: 0
+=======
+    filterMode: -1
+    aniso: 1
+    mipBias: -100
+>>>>>>> eaa0af3 (Choose-your-Adventure)
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -56,6 +69,7 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+<<<<<<< HEAD
   flipbookRows: 1
   flipbookColumns: 1
   maxTextureSizeSet: 0
@@ -64,6 +78,12 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 1
   cookieLightType: 1
+=======
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+>>>>>>> eaa0af3 (Choose-your-Adventure)
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -76,7 +96,11 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+>>>>>>> eaa0af3 (Choose-your-Adventure)
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 1024
@@ -88,6 +112,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
@@ -101,6 +126,9 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+>>>>>>> eaa0af3 (Choose-your-Adventure)
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 1024
@@ -112,7 +140,11 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
     forceMaximumCompressionQuality_BC6H_BC7: 0
+=======
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+>>>>>>> eaa0af3 (Choose-your-Adventure)
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -126,7 +158,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
     nameFileIdTable: {}
+=======
+>>>>>>> eaa0af3 (Choose-your-Adventure)
   spritePackingTag: 
   pSDRemoveMatte: 1
   pSDShowRemoveMatteOption: 1

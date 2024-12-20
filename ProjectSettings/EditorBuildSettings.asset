@@ -6,6 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Main Menu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -13,3 +14,8 @@ EditorBuildSettings:
     guid: d2809ab9b90eea7419d8d90d4c505d35
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a98c451d8d6ee6b4783cf114590ad39b, type: 2}
+=======
+    path: Assets/Scenes/rpgpp_lt_scene_1.0.unity
+    guid: d2809ab9b90eea7419d8d90d4c505d35
+  m_configObjects: {}
+>>>>>>> eaa0af3 (Choose-your-Adventure)

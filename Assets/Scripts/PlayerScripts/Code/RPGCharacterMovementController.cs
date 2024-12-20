@@ -243,6 +243,7 @@ namespace RPGCharacterAnims
 
         private void Idle_EnterState()
         {
+<<<<<<< HEAD
             if (!TimeManager.isPaused) { 
 			    if (debugMessages) { Debug.Log("Idle_EnterState"); }
 			    superCharacterController.EnableSlopeLimit();
@@ -251,6 +252,14 @@ namespace RPGCharacterAnims
                 doublejumped = false;
                 canDoubleJump = false;
             }
+=======
+			if (debugMessages) { Debug.Log("Idle_EnterState"); }
+			superCharacterController.EnableSlopeLimit();
+            superCharacterController.EnableClamping();
+            canJump = true;
+            doublejumped = false;
+            canDoubleJump = false;
+>>>>>>> eaa0af3 (Choose-your-Adventure)
         }
 
         // Run every frame character is in the idle state.

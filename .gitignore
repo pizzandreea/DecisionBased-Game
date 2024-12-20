@@ -59,6 +59,10 @@ sysinfo.txt
 *.apk
 *.aab
 *.unitypackage
+<<<<<<< HEAD
+=======
+*.unitypackage.meta
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 *.app
 
 # Crashlytics generated file

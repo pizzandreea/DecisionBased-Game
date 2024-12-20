@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 00810349abdc25843865d0908401daed
+=======
+guid: cd87e5026d1695148aabe96121c526ef
+>>>>>>> eaa0af3 (Choose-your-Adventure)
 timeCreated: 1559923673
 licenseType: Store
 NativeFormatImporter:
